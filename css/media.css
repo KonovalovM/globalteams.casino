@@ -1,0 +1,80 @@
+
+@media only screen and (max-width: 980px) {
+
+    body {
+        background-color: black;
+        background-attachment: unset;
+        background-size: contain;
+        background-position-y: 10%;
+    }
+    .logo span {
+        justify-content: right;
+        margin-left: 5%;
+    }
+    .description{
+        justify-content: right;
+        margin-left: 5%;
+        margin-top: 10%;
+        font-size: xx-large;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .description h6,
+    .table,
+    .user_rating,
+    .rating{
+        display: none;
+    }
+    .description h4{
+        justify-content: right;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 8%;
+    }
+
+    .name {
+        display: block;
+        font-size: xxx-large;
+    }
+
+    .flag {
+        position: absolute;
+        margin-top: -17%;
+        background: #1ee206;
+        padding-left: 19px;
+        padding-right: 23px;
+        width: 40%;
+        margin-left: 55%;
+        font-size: xx-large;
+    }
+
+    .list{
+        width: 95%;
+        height: 200px;
+        margin-top: 7%;
+    }
+
+    .list li {
+        width: 33%;
+    }
+
+    .user_rating_li {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: -7%;
+    }
+
+    .rating_stars{
+        width: 129px;
+        height: 24px;
+    }
+
+    .buttom_li {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 7%;
+    }
+
+    .button{
+        font-size: xx-large;
+    }
