@@ -7,11 +7,13 @@
         background-size: contain;
         background-position-y: 10%;
     }
+
     .logo span {
         justify-content: right;
         margin-left: 5%;
     }
-    .description{
+
+    .description {
         justify-content: right;
         margin-left: 5%;
         margin-top: 10%;
@@ -22,10 +24,11 @@
     .description h6,
     .table,
     .user_rating,
-    .rating{
+    .rating {
         display: none;
     }
-    .description h4{
+
+    .description h4 {
         justify-content: right;
         margin-left: 0;
         margin-right: 0;
@@ -48,7 +51,7 @@
         font-size: xx-large;
     }
 
-    .list{
+    .list {
         width: 95%;
         height: 200px;
         margin-top: 7%;
@@ -64,7 +67,7 @@
         margin-top: -7%;
     }
 
-    .rating_stars{
+    .rating_stars {
         width: 129px;
         height: 24px;
     }
@@ -75,6 +78,7 @@
         margin-top: 7%;
     }
 
-    .button{
+    .button {
         font-size: xx-large;
     }
+}

@@ -1,5 +1,5 @@
 <?php
-require_once '../configs/pdo_ini.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . "/configs/pdo_ini.php";
 
 $ip = $_SERVER['REMOTE_ADDR'];
 
@@ -14,10 +14,23 @@ if (isset($_POST)) {
     $sth->setFetchMode(\PDO::FETCH_ASSOC);
     $sth->execute();
 
-    $file = Fopen("$date1-click.log", "a");
-    $text = "IP-adress: $ip, Date: $date, Button id: $_button_id;
-    ";
-    $con = fwrite($file, $text);
 
-}
-include "../index.php";
+    $filename = $_SERVER['DOCUMENT_ROOT'] . "/modules/$date1-click.log";
+
+    if (!file_exists($filename)) {
+        $file = Fopen("$date1-click.log", "w");
+        $text = "IP-adress: $ip, Date: $date, Button id: $_button_id;
+   ";
+        $con = fwrite($file, $text);
+        } else {
+        if (is_writable($filename)) {
+        $file = Fopen("$date1-click.log", "a");
+        $text = "IP-adress: $ip, Date: $date, Button id: $_button_id;
+   ";
+        $con = fwrite($file, $text);
+        } else {
+            echo 'Файл недоступний для запису';
+            }
+        }
+    }
+

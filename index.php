@@ -9,8 +9,7 @@ require_once 'configs/pdo_ini.php';
             <?php echo "Casino";?>
         </title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/media.css">
-        <link rel="stylesheet" href="css/forms.css">
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/png"
     </head>
 
     <body>
@@ -36,10 +35,11 @@ require_once 'configs/pdo_ini.php';
         <div>
                 <?php
                 include "modules/list.php";
+
                 ?>
         </div>
 
-                <script src="js/ajax.js"></script>
+        <script src="js/ajax.js"></script>
 
     </body>
 

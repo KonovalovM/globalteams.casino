@@ -1,6 +1,14 @@
 CREATE database casino;
 USE casino;
 
+CREATE table users (
+id int unsigned primary key auto_increment,
+name varchar (255) not null default '',
+email varchar (255) unique not null,
+password varchar (255),
+time_created timestamp
+);
+
 CREATE table lists (
 id int unsigned primary key auto_increment,
 flag varchar(255),
@@ -21,6 +29,10 @@ user_ip varchar (255),
 date_time timestamp,
 button_id int
 );
+
+INSERT INTO `users` (`name`, `email`, `password`)
+VALUES
+('admin', 'admin@gmail.com', 'admin');
 
 INSERT INTO `lists` (`flag`, `logo`, `name`, `welcome_bonus_1`, `welcome_bonus_2`, `welcome_bonus_3`, `welcome_bonus_4`, `user_rating`, `rating`)
 VALUES
